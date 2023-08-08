@@ -3,10 +3,14 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>University Website Design - Easy Tutorials</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Vithkuqi&display=swap" rel="stylesheet">
         <style>
             *{
                 margin: 0;
                 padding: 0;
+                font-family: 'Noto Serif Vithkuqi', serif;
             }
             .header{
                 min-height: 100vh;
@@ -15,6 +19,30 @@
                 background-position: center;
                 background-size: cover;
                 position: relative;
+            }
+            nav{
+                display: flex;
+                padding: 2% 6%;
+                justify-content: space-between;
+                align-items: center;
+            }
+            nav img{
+                width: 150px;
+            }
+            .nav-links{
+                flex: 1;
+                text-align: right;
+            }
+            .nav-links ul li{
+                list-style: none;
+                display: inline-block;
+                padding: 8px 12px;
+                position: relative; 
+            }
+            .nav-links ul li a{
+                color: #fff;
+                text-decoration: none;
+                font-size: 13px;
             }
         </style>
     </head>
