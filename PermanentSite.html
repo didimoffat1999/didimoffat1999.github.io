@@ -5,7 +5,7 @@
         <title>NearAndDearToMyHeart</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Vithkuqi&effect=fire" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Noto+Serif+Vithkuqi&effect=fire" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <style>
             *{
@@ -21,6 +21,13 @@
                 background-size: cover;
                 position: relative;
             }
+            .title h1{
+                text-align: center;
+                font-size: 40px;
+            }
+            .title i{
+                text-align: right;
+            }
             nav{
                 display: flex;
                 padding: 2% 6%;
@@ -32,7 +39,7 @@
             }
             .nav-links{
                 flex: 1;
-                text-align: right;
+                text-align: center;
             }
             .nav-links ul li{
                 list-style: none;
@@ -43,7 +50,7 @@
             .nav-links ul li a{
                 color: #fff;
                 text-decoration: none;
-                font-size: 13px;
+                font-size: 17px;
             }
             .nav-links ul li::after{
                 content: '';
@@ -60,7 +67,7 @@
             .text-box{
                 width: 90%;
                 position: absolute;
-                top: 50%;
+                top: 60%;
                 left: 50%;
                 transform: translate(-50%,-50%);
                 text-align: center;
@@ -75,7 +82,7 @@
                 border: 1px solid #fff;
                 padding: 12px 34px;
                 font-size: 13px;
-                background: transparent;
+                background: #ed74cd;
                 position: relative;
                 cursor: pointer;
 
@@ -88,7 +95,13 @@
             nav .fa{
                 display: none;
             }
+            div .fa{
+                display: none;
+            }
             @media(max-width: 700px){
+                .title h1{
+                    font-size: 25px;
+                } 
                 .text-box h1{
                     font-size: 20px;
                 }
@@ -112,6 +125,14 @@
                     margin: 10px;
                     font-size: 22px;
                     cursor: pointer;
+                    
+                }
+                div .fa{
+                    display: block;
+                    color: #fff;
+                    margin: 10px;
+                    font-size: 22px;
+                    cursor: pointer;
                 }
                 .nav-links ul{
                     padding: 30px;
@@ -122,10 +143,11 @@
     </head>
     <body>
         <section class="header">
+            <div class="title">
+                <h1 class="font-effect-fire">Near And Dear To My Heart</h1>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </div>
             <nav>
-                <div>
-                    <h1 class="font-effect-fire">Near And Dear To My Heart</h1>
-                </div>
                 <div class="nav-links" id="navLinks">
                     <i class="fa fa-times" onclick="hideMenu()"></i>
                     <ul>
@@ -135,7 +157,6 @@
                         <li><a href="">CONTACT</a></li>
                     </ul>
                 </div>
-                <i class="fa fa-bars" onclick="showMenu()"></i>
             </nav>
             <div class="text-box">
                 <h1 class="font-effect-fire">From my heart, to yours</h1>
