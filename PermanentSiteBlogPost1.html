@@ -154,7 +154,7 @@
                 background-color: #fff;
             }
             .comment-box h3{
-                text-align: left;
+                text-align: center;
                 color: #ed74cd;
             }
             .comment-form input, .comment-form textarea{
@@ -165,7 +165,10 @@
                 border: none;
                 outline: none;
                 background: #ed74cd;
+            }
+            .comment-form input::placeholder, .comment-form textarea::placeholder{
                 color: #fff;
+                opacity: 1;
             }
             .comment-form button{
                 margin: 10px 0;
@@ -274,7 +277,7 @@
 
                 <form class="comment-form">
                     <input type="text" placeholder="Enter Name or Anonymous">
-                    <textarea rows="5" placeholder="Your comment"></textarea>
+                    <textarea rows="5" placeholder="Your Comment"></textarea>
                     <button type="submit" class="hero-btn pink-btn">POST COMMENT</button>
                 </form>
             </div>
