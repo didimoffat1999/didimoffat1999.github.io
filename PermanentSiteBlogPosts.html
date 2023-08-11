@@ -13,21 +13,6 @@
                 padding: 0;
                 font-family: 'Noto Serif Vithkuqi', serif;
             }
-            .header{
-                min-height: 100vh;
-                width: 100%;
-                background-image: url(https://i.ibb.co/W3Lwwgx/Didi-Moffat-AP.jpg);
-                background-position: center;
-                background-size:contain;
-                position: relative;
-            }
-            .title h1{
-                text-align: center;
-                font-size: 40px;
-            }
-            .title i{
-                text-align: right;
-            }
             nav{
                 display: flex;
                 padding: 2% 6%;
@@ -39,7 +24,7 @@
             }
             .nav-links{
                 flex: 1;
-                text-align: center;
+                text-align: right;
             }
             .nav-links ul li{
                 list-style: none;
@@ -64,46 +49,10 @@
             .nav-links ul li:hover::after{
                 width: 100%;
             }
-            .text-box{
-                width: 90%;
-                position: absolute;
-                top: 60%;
-                left: 50%;
-                transform: translate(-50%,-50%);
-                text-align: center;
-            }
-            .text-box h1{
-                font-size: 62px;
-            }
-            .hero-btn{
-                display: inline-block;
-                text-decoration: none;
-                color: #fff;
-                border: 1px solid #fff;
-                padding: 12px 34px;
-                font-size: 13px;
-                background: #ed74cd;
-                position: relative;
-                cursor: pointer;
-            }
-            .hero-btn:hover{
-                border: 1px solid #ed74cd;
-                background: #ed74cd;
-                transition: 1s;
-            }
             nav .fa{
                 display: none;
             }
-            div .fa{
-                display: none;
-            }
             @media(max-width: 700px){
-                .title h1{
-                    font-size: 25px;
-                } 
-                .text-box h1{
-                    font-size: 20px;
-                }
                 .nav-links ul li{
                     display: block;
                 }
@@ -113,7 +62,7 @@
                     height: 100vh;
                     width: 200px;
                     top: 0;
-                    right: -200px;
+                    right: 0px;
                     text-align: left;
                     z-index: 2;
                     transition: 1s;
@@ -124,58 +73,125 @@
                     margin: 10px;
                     font-size: 22px;
                     cursor: pointer;
-                    
-                }
-                div .fa{
-                    display: block;
-                    color: #fff;
-                    margin: 10px;
-                    font-size: 22px;
-                    cursor: pointer;
                 }
                 .nav-links ul{
                     padding: 30px;
                 }
-                .header{
-                    min-height: 150vh;
-                    width: 100%;
-                    background-image: url(https://i.ibb.co/W3Lwwgx/Didi-Moffat-AP.jpg);
-                    background-position: center;
-                    background-size:contain;
-                    position: relative;
-                }
-                .text-box{
-                    padding-bottom: 150px;
-                }
-                .title h1{
-                    padding-top: 20px;
+                .footer{
+                    margin-top: 250px;
                 }
             }
 
+ /*------- blog posts page --------*/ 
+            .row{
+                margin-top: 5%;
+                display: flex;
+                justify-content: space-between; 
+            }
+            .sub-header{
+                height: 50vh;
+                width: 100%;
+                background-color: #ed74cd;
+                background-position: center;
+                background-size: cover;
+                text-align: center;
+                color: #fff;
+            }
+            .sub-header h1{
+                margin-top: 100px;
+                font-size: 60px;
+            }
+            .blogposts{
+                width: 80%;
+                margin: auto;
+                text-align: center;
+                padding-top: 100px;
+            }
+            .blogposts-col{
+                flex-basis: 31%;
+                border-radius: 10px;
+                margin-bottom: 5%;
+                text-align: left;
+                background-color: #ed74cd;
+            }
+            .blogposts-col img{
+                width: 100%;
+                border-radius: 10px;
+            }
+            .blogposts-col h3{
+                margin-top: 16px;
+                margin-bottom: 15px;
+                text-align: center;
+            }
+/*------- footer --------*/
+
+                .footer{
+                    width: 100%;
+                    text-align: center;
+                    padding: 30px 0;
+                }
+                .footer h4{
+                    margin: top 20px;
+                    font-weight: 600;
+                    color: #ed74cd;
+                }
+                .footer p{
+                    color: #ed74cd;
+                }
+                .icons .fa{
+                    color: #ed74cd;
+                    margin: 0 13px;
+                    cursor: pointer;
+                    padding: 18px 0;
+                }
+                .fa-heart-o{
+                    color: #ed74cd;
+                }
         </style>
     </head>
     <body>
-        <section class="header">
-            <div class="title">
-                <h1 class="font-effect-fire">Near And Dear To My Heart</h1>
-                <i class="fa fa-bars" onclick="showMenu()"></i>
-            </div>
+        <section class="sub-header">
             <nav>
                 <div class="nav-links" id="navLinks">
                     <i class="fa fa-times" onclick="hideMenu()"></i>
                     <ul>
                         <li><a href="PermanentSite.html">HOME</a></li>
                         <li><a href="PermanentSiteAbout.html">ABOUT</a></li>
-                        <li><a href="PermanentSiteBlogPosts.html">BLOG POSTS</a></li>
+                        <li><a href="PermanentSiteBlogPosts.html">BLOGPOSTS</a></li>
                         <li><a href="PermanentSiteContact.html">CONTACT</a></li>
                     </ul>
                 </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
             </nav>
-            <div class="text-box">
-                <h1 class="font-effect-fire">From my heart, to yours</h1>
-                <a href="PermanentSiteBlogPosts.html" class="hero-btn">See Blog Posts</a>
-            </div>
+            <h1 class="font-effect-fire">Blog Posts</h1>
         </section>
+
+<!-- blog posts content -->
+
+<section class="blogposts">
+    <div class="row">
+        <div class="blogposts-col">
+            <img src="https://i.ibb.co/289vQGS/guy-pulls-out-last-ruble-out-empty-purse-poverty-unemployment-man-with-no-money-businessman-holding.jpg" alt="guy-pulls-out-last-ruble-out-empty-purse-poverty-unemployment-man-with-no-money-businessman-holding-">
+            <h3 class="font-effect-fire">I Care, But My Purse Hurts</h3>
+        </div>
+        <div class="blogposts-col">
+        </div>
+        <div class="blogposts-col">
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<section class="footer">
+    <h4>Social Media</h4>
+    <div class="icons">
+        <a href="https://instagram.com/iamdidimoffat"><i class="fa fa-instagram"></i></a>
+        <a href="https://youtube.com/@iamdidimoffat"><i class="fa fa-youtube-play"></i></a>
+        <a href="https://podcasters.spotify.com/pod/show/iamdidimoffat"><i class="fa fa-spotify"></i></i></a>
+    </div>
+    <p>Made with <i class="fa fa-heart-o"></i> by Didi Moffat</p>
+</section>
+
 
 <!--JavaScript for Toggle Menu-->
         <script>
@@ -190,5 +206,3 @@
         </script>
     </body>
 </html>
-
-
