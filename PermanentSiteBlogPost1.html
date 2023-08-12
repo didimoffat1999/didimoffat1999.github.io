@@ -178,7 +178,8 @@
                     font-size: 24px;
                 }
             }
-            .likeBtn{
+                        
+/*------- .likeBtn{
                 margin-top: 20px;
                 text-align: center;
             }
@@ -189,7 +190,8 @@
             }
             .likeBtn span{
                 color: #fff;
-            }
+            } --------*/
+            
             
 /*------- footer --------*/
 
@@ -283,10 +285,10 @@
             ex ac cursus. Nam pharetra viverra efficitur. Sed 
             pellentesque luctus arcu</p>
             
-            <div class="likeBtn">
+           <!-- <div class="likeBtn">
                 <button id="likeButton">Like</button>
                 <span id="likeCount">0</span>
-            </div>
+            </div> --> 
 
             <div class="comment-box">
 
@@ -327,19 +329,15 @@
                 navLinks.style.right = "-200px";
             }
 
-            var likeButton = document.getElementById("likeButton");
+/*-------   var likeButton = document.getElementById("likeButton");
             var likeCount = document.getElementById("likeCount");
-            
-            if(likeCount.innerText == "0"){
-                let count = 0;
-            } else{
-                let count = Number(likeCount.innerText);
-            }
+            let count = 0;
 
             likeButton.addEventListener("click", () => {
                 count++;
                 likeCount.innerText = count;
-            });
+            }); --------*/
+            
         </script>
     </body>
 </html>
