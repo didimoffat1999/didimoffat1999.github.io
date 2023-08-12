@@ -2,24 +2,16 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>University Website Design - Easy Tutorials</title>
+        <title>NearAndDearToMyHeart</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Vithkuqi&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Noto+Serif+Vithkuqi&effect=fire" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <style>
             *{
                 margin: 0;
                 padding: 0;
                 font-family: 'Noto Serif Vithkuqi', serif;
-            }
-            .header{
-                min-height: 100vh;
-                width: 100%;
-                background-image: url(https://i.ibb.co/8gBSyDK/banner.png);
-                background-position: center;
-                background-size: cover;
-                position: relative;
             }
             nav{
                 display: flex;
@@ -43,13 +35,13 @@
             .nav-links ul li a{
                 color: #fff;
                 text-decoration: none;
-                font-size: 13px;
+                font-size: 17px;
             }
             .nav-links ul li::after{
                 content: '';
                 width: 0%;
                 height: 2px;
-                background: #f44336;
+                background: #ed74cd;
                 display: block;
                 margin: auto;
                 transition: 0.5s;
@@ -64,14 +56,14 @@
                 border: 1px solid #fff;
                 padding: 12px 34px;
                 font-size: 13px;
-                background: transparent;
+                background: #ed74cd;
                 position: relative;
                 cursor: pointer;
 
             }
             .hero-btn:hover{
-                border: 1px solid #f44336;
-                background: #f44336;
+                border: 1px solid #ed74cd;
+                background: #ed74cd;
                 transition: 1s;
             }
             nav .fa{
@@ -83,7 +75,7 @@
                 }
                 .nav-links{
                     position: absolute;
-                    background: #f44336;
+                    background: #ed74cd;
                     height: 100vh;
                     width: 200px;
                     top: 0;
@@ -102,6 +94,15 @@
                 .nav-links ul{
                     padding: 30px;
                 }
+                .about-col h1{
+                    font-size: 12px;
+                }
+                .about-col p{
+                    font-size: 12px;
+                }
+                .pink-btn{
+                    margin-top: 10px;
+                }
             }
 
  /*------- about us page --------*/ 
@@ -113,7 +114,7 @@
             .sub-header{
                 height: 50vh;
                 width: 100%;
-                background-image: url(https://i.ibb.co/HGHx5TN/background.jpg);
+                background-color: #ed74cd;
                 background-position: center;
                 background-size: cover;
                 text-align: center;
@@ -121,8 +122,9 @@
             }
             .sub-header h1{
                 margin-top: 100px;
+                font-size: 60px;
             }
-            .about-us{
+            .about{
                 width: 80%;
                 margin: auto;
                 padding-top: 80px;
@@ -137,16 +139,20 @@
             }
             .about-col h1{
                 padding-top: 0;
+                color: #ed74cd;
+                text-align: center;
             }
             .about-col p{
                 padding: 15px 0 25px;
+                color: #ed74cd;
             }
-            .red-btn{
-                border: 1px solid #f44336;
-                background: transparent;
-                color: #f44336;
+            .pink-btn{
+                border: 1px solid #fff;
+                background: #ed74cd;
+                color: #fff;
+                margin-top: 10px;
             }
-            .red-btn:hover{
+            .pink-btn:hover{
                 color: #fff;
             }
 
@@ -158,58 +164,57 @@
                     padding: 30px 0;
                 }
                 .footer h4{
-                    margin-bottom: 25px;
                     margin: top 20px;
                     font-weight: 600;
+                    color: #ed74cd;
+                }
+                .footer p{
+                    color: #ed74cd;
                 }
                 .icons .fa{
-                    color: #f44336;
+                    color: #ed74cd;
                     margin: 0 13px;
                     cursor: pointer;
                     padding: 18px 0;
                 }
                 .fa-heart-o{
-                    color: #f44336;
+                    color: #ed74cd;
                 }
         </style>
     </head>
     <body>
         <section class="sub-header">
             <nav>
-                <a href="indextut3.html"><img src="https://i.ibb.co/KyzVqsw/logo.png" alt="Logo"></a>
                 <div class="nav-links" id="navLinks">
                     <i class="fa fa-times" onclick="hideMenu()"></i>
                     <ul>
-                        <li><a href="indextut3.html">HOME</a></li>
-                        <li><a href="indextut3about.html">ABOUT</a></li>
-                        <li><a href="indextut3course.html">COURSE</a></li>
-                        <li><a href="indextut3blog.html">BLOG</a></li>
-                        <li><a href="indextut3contact.html">CONTACT</a></li>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="blogposts.html">BLOG POSTS</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
                     </ul>
                 </div>
                 <i class="fa fa-bars" onclick="showMenu()"></i>
             </nav>
-            <h1>About Us</h1>
+            <h1 class="font-effect-fire">About</h1>
         </section>
 
 <!-- about us content -->
 
-<section class="about-us">
+<section class="about">
     <div class="row">
         <div class="about-col">
-            <h1>We are the world's largest university</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing
-                elit. Pellentesque aliquet turpis nulla, eleifend
-                faucibus est sollicitudin ut. Maecenas ut venenatis ex,
-                et dapibus purus. Donec sit amet nisl non justo
-                malesuada fermentum. Donec eget felis dolor. Suspendisse
-                condimentum vestibulum ex ac cursus. Nam pharetra
-                viverra efficitur. Sed pellentesque luctus arcu, quis
-                finibus nibh luctus mattis.</p>
-            <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+            <h1>About Didi Moffat</h1>
+            <p>Didi Moffat is a disciple of Jesus Christ. She attended Columbia university and graduated in 2021 with a degree
+                in Computer Science: Information Science and Contemporary Society.<br><br>The name of this blog was given to her by
+                God, and He has been with her through every step of the way from building the website, to ideas for it, and blog
+                content.
+            </p>
+            <a href="blogposts.html" class="hero-btn pink-btn">SEE BLOG POSTS</a>
+            <a href="contact.html" class="hero-btn pink-btn">CONTACT</a>
         </div>
         <div class="about-col">
-            <img src="https://i.ibb.co/27D9rDr/about.jpg" alt="about">
+            <img src="https://i.ibb.co/T8hjtTQ/Grad-Photo-Cropped.png" alt="Grad-Photo-Cropped">
         </div>
     </div>
 
@@ -217,17 +222,13 @@
 
 <!-- Footer -->
 <section class="footer">
-    <h4>About Us</h4>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Pellentesque aliquet turpis nulla, eleifend faucibus est 
-        <br>sollicitudin ut. Maecenas ut venenatus ex, et dapibus purus.</p>
+    <h4>Social Media</h4>
     <div class="icons">
-        <i class="fa fa-facebook"></i>
-        <i class="fa fa-twitter"></i>
-        <i class="fa fa-instagram"></i>
-        <i class="fa fa-linkedin"></i>
+        <a href="https://instagram.com/iamdidimoffat"><i class="fa fa-instagram"></i></a>
+        <a href="https://youtube.com/@iamdidimoffat"><i class="fa fa-youtube-play"></i></a>
+        <a href="https://podcasters.spotify.com/pod/show/iamdidimoffat"><i class="fa fa-spotify"></i></i></a>
     </div>
-    <p>Made with <i class="fa fa-heart-o"></i> by Easy Tutorials</p>
+    <p>Made with <i class="fa fa-heart-o"></i> by Didi Moffat</p>
 </section>
 
 

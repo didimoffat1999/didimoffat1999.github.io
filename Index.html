@@ -1,109 +1,193 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Near And Dear To My Heart</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NearAndDearToMyHeart</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css?family=Noto+Serif+Vithkuqi&effect=fire" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                font-family: 'Noto Serif Vithkuqi', serif;
+            }
+            .header{
+                min-height: 100vh;
+                width: 100%;
+                background-image: url(https://i.ibb.co/W3Lwwgx/Didi-Moffat-AP.jpg);
+                background-position: center;
+                background-size:contain;
+                position: relative;
+            }
+            .title h1{
+                text-align: center;
+                font-size: 40px;
+            }
+            .title i{
+                text-align: right;
+            }
+            nav{
+                display: flex;
+                padding: 2% 6%;
+                justify-content: space-between;
+                align-items: center;
+            }
+            nav img{
+                width: 150px;
+            }
+            .nav-links{
+                flex: 1;
+                text-align: center;
+            }
+            .nav-links ul li{
+                list-style: none;
+                display: inline-block;
+                padding: 8px 12px;
+                position: relative; 
+            }
+            .nav-links ul li a{
+                color: #ed74cd;
+                text-decoration: none;
+                font-size: 17px;
+            }
+            .nav-links ul li::after{
+                content: '';
+                width: 0%;
+                height: 2px;
+                background: #ed74cd;
+                display: block;
+                margin: auto;
+                transition: 0.5s;
+            }
+            .nav-links ul li:hover::after{
+                width: 100%;
+            }
+            .text-box{
+                width: 90%;
+                position: absolute;
+                top: 60%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                text-align: center;
+            }
+            .text-box h1{
+                font-size: 62px;
+            }
+            .hero-btn{
+                display: inline-block;
+                text-decoration: none;
+                color: #fff;
+                border: 1px solid #fff;
+                padding: 12px 34px;
+                font-size: 13px;
+                background: #ed74cd;
+                position: relative;
+                cursor: pointer;
+            }
+            .hero-btn:hover{
+                border: 1px solid #ed74cd;
+                background: #ed74cd;
+                transition: 1s;
+            }
+            nav .fa{
+                display: none;
+            }
+            div .fa{
+                display: none;
+            }
+            @media(max-width: 700px){
+                .title h1{
+                    font-size: 25px;
+                } 
+                .text-box h1{
+                    font-size: 20px;
+                }
+                .nav-links ul li{
+                    display: block;
+                }
+                .nav-links{
+                    position: absolute;
+                    background: #ed74cd;
+                    height: 100vh;
+                    width: 200px;
+                    top: 0;
+                    right: -200px;
+                    text-align: left;
+                    z-index: 2;
+                    transition: 1s;
+                }
+                nav .fa{
+                    display: block;
+                    color: #fff;
+                    margin: 10px;
+                    font-size: 22px;
+                    cursor: pointer;
+                    
+                }
+                div .fa{
+                    display: block;
+                    color: #fff;
+                    margin: 10px;
+                    font-size: 22px;
+                    cursor: pointer;
+                }
+                .nav-links ul{
+                    padding: 30px;
+                }
+                .header{
+                    min-height: 150vh;
+                    width: 100%;
+                    background-image: url(https://i.ibb.co/W3Lwwgx/Didi-Moffat-AP.jpg);
+                    background-position: center;
+                    background-size:contain;
+                    position: relative;
+                }
+                .text-box{
+                    padding-bottom: 150px;
+                }
+                .title h1{
+                    padding-top: 20px;
+                }
+            }
+
+        </style>
     </head>
     <body>
-        <h1>Near And Dear To My Heart</h1>
-        <h2>Possibly remove</h2>
-        <h3>Possibly remove</h3>
-        <h4>Possibly remove</h4>
-        <h5>Possibly remove</h5>
-        <h6>Possibly remove</h6>
+        <section class="header">
+            <div class="title">
+                <h1 class="font-effect-fire">Near And Dear To My Heart</h1>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </div>
+            <nav>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="blogposts.html">BLOG POSTS</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="text-box">
+                <h1 class="font-effect-fire">From my heart, to yours</h1>
+                <a href="blogposts.html" class="hero-btn">See Blog Posts</a>
+            </div>
+        </section>
 
-        This is my very first website and I'm <b>extremely excited!!!!!</b>
+<!--JavaScript for Toggle Menu-->
+        <script>
+            var navLinks = document.getElementById("navLinks");
 
-        <p>
-            Lorem ipsum dolor sit amet. Eos commodi earum aut ipsa consequatur cum praesentium Quis ea error consequatur. 
-            Qui incidunt dolores sit inventore voluptatem vel blanditiis consequuntur At molestiae minus eos rerum tempore 
-            ab repellat ducimus ut quos cupiditate.
-        </p>
-
-        <p>
-            Qui necessitatibus possimus ut numquam quos eos aliquid libero ex rerum molestias sit ipsa quia est voluptate beatae 
-            rem alias ipsam. Et minima odio et natus repellendus est galisum veritatis sed dolorem alias.
-        </p>
-
-        Sit minus modi non ducimus omnis <br><br><br><br>
-        <b>ad error error in</b><br> 
-        <i>beatae voluptatibus in itaque</i><br>
-        <u>dignissimos At voluptate omnis </u><br>
-        <em>et dolorum omnis. Et accusantium</em><br>
-        <strong>natus est</strong>
-        <hr>
-         enim voluptate et doloribus <a href="https://www.google.com" target="_blank">temporibus ex ullam fugiat. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien 
-         ut libero</a> venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed 
-         fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit 
-         cursus nunc.
-        <br>
-         <img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Ft4.ftcdn.net%2Fjpg%2F03%2F19%2F04%2F73%2F360_F_319047351_wb8hrWjRVMIxVBwM4SqGsNazr68i1rAn.jpg&tbnid=s6ZyBCjIMWDZCM&vet=12ahUKEwjoqp6Xn6yAAxWYmScCHW4iAKsQMygAegUIARDsAQ..i&imgrefurl=https%3A%2F%2Fstock.adobe.com%2Fsearch%3Fk%3Doutside&docid=daUBEvfWaDfqVM&w=558&h=360&q=outside&ved=2ahUKEwjoqp6Xn6yAAxWYmScCHW4iAKsQMygAegUIARDsAQ"> <!--notsuggestedpractice-->
-         <img src="IMG_1002.jpg" border="10">
-
-         <ul>
-            <li>apples
-                <ul>
-                    <li>golden delicious</li>
-                    <li>grammy smith</li>
-                    <li>gala</li>
-                </ul>
-            </li>
-            <li>oranges</li>
-            <li>pineapples</li>
-            <li>mangoes</li>
-            <li>dragonfruit</li>
-         </ul>
-
-         <ol>
-            <li>apples</li>
-            <li>oranges</li>
-            <li>pineapples</li>
-            <li>mangoes</li>
-            <li>dragonfruit</li>
-         </ol>
-
-         <table border="10" cellpadding="10" cellspacing="0">
-            <tr>
-                <th></th>
-                <th>Month</th>
-                <th>Rent</th>
-                <th colspan="2">Utilities</th>
-                <th>Groceries</th>
-                <th>Eating Out</th>
-                <th>Entertainment</th>
-            </tr>
-            <tr>
-                <td rowspan="3">Fall</td>
-                <td>June</td>
-                <td>$1500</td>
-                <td>$100</td>
-                <td>$50</td>
-                <td>$350</td>
-                <td>$100</td>
-                <td>$50</td>
-            </tr>
-
-            <tr>
-                <td>July</td>
-                <td>$1500</td>
-                <td>$100</td>
-                <td>$50</td>
-                <td>$350</td>
-                <td>$100</td>
-                <td>$50</td>
-            </tr>
-
-            <tr>
-                <td>August</td>
-                <td>$1500</td>
-                <td>$100</td>
-                <td>$50</td>
-                <td>$350</td>
-                <td>$100</td>
-                <td>$50</td>
-            </tr>
-         </table>
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
     </body>
 </html>
 
