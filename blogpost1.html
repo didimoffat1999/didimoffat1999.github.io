@@ -74,7 +74,7 @@
                 }
                 .nav-links{
                     position: absolute;
-                    background: #ed74cd;
+                    background: #fff;
                     height: 100vh;
                     width: 200px;
                     top: 0;
@@ -85,7 +85,7 @@
                 }
                 nav .fa{
                     display: block;
-                    color: #fff;
+                    color: #ed74cd;
                     margin: 10px;
                     font-size: 22px;
                     cursor: pointer;
@@ -146,7 +146,13 @@
                 padding: 0;
                 text-align: center;
             }
-            .comment-box{
+            @media(max-width:700px){
+                .sub-header h1{
+                    font-size: 24px;
+                }
+            }
+                        
+/*------- .comment-box{
                 border: 1px solid #ccc;
                 margin: 50px 0;
                 padding: 10px 20px;
@@ -173,13 +179,7 @@
             .comment-form button{
                 margin: 10px 0;
             }
-            @media(max-width:700px){
-                .sub-header h1{
-                    font-size: 24px;
-                }
-            }
-                        
-/*------- .likeBtn{
+            .likeBtn{
                 margin-top: 20px;
                 text-align: center;
             }
@@ -288,8 +288,8 @@
            <!-- <div class="likeBtn">
                 <button id="likeButton">Like</button>
                 <span id="likeCount">0</span>
-            </div> --> 
-
+            </div> 
+        
             <div class="comment-box">
 
                 <h3>Leave a comment</h3>
@@ -299,7 +299,7 @@
                     <textarea rows="5" placeholder="Your Comment"></textarea>
                     <button type="submit" class="hero-btn pink-btn">POST COMMENT</button>
                 </form>
-            </div>
+            </div>--> 
 
         </div>
 </section>
