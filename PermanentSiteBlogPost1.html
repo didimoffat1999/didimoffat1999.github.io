@@ -329,8 +329,12 @@
 
             var likeButton = document.getElementById("likeButton");
             var likeCount = document.getElementById("likeCount");
-            let count = 0;
 
+            if(likeCount.innerText == 0){
+                let count = 0;
+            } else{
+                let count = likeCount.innerText;
+            }
             likeButton.addEventListener("click", () => {
                 count++;
                 likeCount.innerText = count;
