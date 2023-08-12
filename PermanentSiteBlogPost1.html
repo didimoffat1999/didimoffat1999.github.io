@@ -327,15 +327,10 @@
                 navLinks.style.right = "-200px";
             }
 
-            var likeButton = document.getElementById("likeButton");
-            var likeCount = document.getElementById("likeCount");
-            var test = 0;
+            const likeButton = document.getElementById("likeButton");
+            const likeCount = document.getElementById("likeCount");
+            let count = 0;
 
-            if(likeCount.innerText == test){
-                let count = 0;
-            } else{
-                let count = likeCount.innerText;
-            }
             likeButton.addEventListener("click", () => {
                 count++;
                 likeCount.innerText = count;
