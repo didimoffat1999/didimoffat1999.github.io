@@ -270,6 +270,11 @@
             Donec eget felis dolor. Suspendisse condimentum vestibulum
             ex ac cursus. Nam pharetra viverra efficitur. Sed 
             pellentesque luctus arcu</p>
+            
+            <div>
+                <button id="likeButton">Like</button>
+                <span id="likeCount">0</span>
+            </div>
 
             <div class="comment-box">
 
@@ -309,6 +314,15 @@
             function hideMenu(){
                 navLinks.style.right = "-200px";
             }
+
+            var likeButton = document.getElementById("likeButton");
+            var likeCount = document.getElementById("likeCount");
+            let count = 0;
+
+            likeButton.addEventListener("click", () => {
+                count++;
+                likeCount.innerText = count;
+            });
         </script>
     </body>
 </html>
