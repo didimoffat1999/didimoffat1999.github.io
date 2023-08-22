@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZKB0RLLV7"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-HZKB0RLLV7');
+        </script>
+
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NearAndDearToMyHeart</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css?family=Noto+Serif+Vithkuqi&effect=fire" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                font-family: 'Noto Serif Vithkuqi', serif;
+            }
+            nav{
+                display: flex;
+                padding: 2% 6%;
+                justify-content: space-between;
+                align-items: center;
+            }
+            nav img{
+                width: 150px;
+            }
+            .nav-links{
+                flex: 1;
+                text-align: right;
+            }
+            .nav-links ul li{
+                list-style: none;
+                display: inline-block;
+                padding: 8px 12px;
+                position: relative; 
+            }
+            .nav-links ul li a{
+                color: #fff;
+                text-decoration: none;
+                font-size: 17px;
+            }
+            .nav-links ul li::after{
+                content: '';
+                width: 0%;
+                height: 2px;
+                background: #ed74cd;
+                display: block;
+                margin: auto;
+                transition: 0.5s;
+            }
+            .nav-links ul li:hover::after{
+                width: 100%;
+            }
+            .hero-btn{
+                display: inline-block;
+                text-decoration: none;
+                color: #fff;
+                border: 1px solid #fff;
+                padding: 12px 34px;
+                font-size: 13px;
+                background: transparent;
+                position: relative;
+                cursor: pointer;
+            }
+            .hero-btn:hover{
+                border: 1px solid #ed74cd;
+                background: #ed74cd;
+                transition: 1s;
+            }
+            nav .fa{
+                display: none;
+            }
+            @media(max-width: 700px){
+                .nav-links ul li{
+                    display: block;
+                }
+                .nav-links{
+                    position: absolute;
+                    background: #ed74cd;
+                    height: 100vh;
+                    width: 200px;
+                    top: 0;
+                    right: 0px;
+                    text-align: left;
+                    z-index: 2;
+                    transition: 1s;
+                }
+                nav .fa{
+                    display: block;
+                    color: #fff;
+                    margin: 10px;
+                    font-size: 22px;
+                    cursor: pointer;
+                }
+                .nav-links ul{
+                    padding: 30px;
+                }
+                .footer{
+                    margin-top: 250px;
+                }
+            }
+
+ /*------- blog post 1 page --------*/ 
+            .row{
+                margin-top: 5%;
+                display: flex;
+                justify-content: space-between; 
+            }
+            .sub-header{
+                height: 50vh;
+                width: 100%;
+                background-color: #ed74cd;
+                background-position: center;
+                background-size: cover;
+                text-align: center;
+                color: #fff;
+            }
+            .sub-header h1{
+                margin-top: 100px;
+                font-size: 60px;
+            }
+            .pink-btn{
+                border: 1px solid #ed74cd;
+                background: transparent;
+                color: #ed74cd;
+            }
+            .pink-btn:hover{
+                color: #fff;
+            }
+            .blog1-content{
+                width: 80%;
+                margin: auto;
+                padding: 60px 0;
+                background-color: #eb6cc9;
+            }
+            .blog1-center img{
+                width: 200px;
+                height: 200px;
+                text-align: center;
+                padding-left: 475px; 
+            }
+            .blog1-center h2{
+                color: #fff;
+                font-weight: 600;
+                margin: 30px 0;
+                text-align: center;
+            }
+            .blog1-center p{
+                color: #fff;
+                padding: 0;
+                text-align: center;
+            }
+            .blog1-center ol li{
+                color: #fff;
+            }
+            .blog1-center a{
+                color: #fff;
+            }
+            @media(max-width:700px){
+                .sub-header h1{
+                    font-size: 24px;
+                }
+                .blog1-center img{
+                    padding-left: 60px;
+                }
+            }
+                        
+/*------- .comment-box{
+                border: 1px solid #ccc;
+                margin: 50px 0;
+                padding: 10px 20px;
+                text-align: center;
+                background-color: #fff;
+            }
+            .comment-box h3{
+                text-align: center;
+                color: #ed74cd;
+            }
+            .comment-form input, .comment-form textarea{
+                width: 100%;
+                padding: 10px;
+                margin: 15px 0;
+                box-sizing: border-box;
+                border: none;
+                outline: none;
+                background: #ed74cd;
+            }
+            .comment-form input::placeholder, .comment-form textarea::placeholder{
+                color: #fff;
+                opacity: 1;
+            }
+            .comment-form button{
+                margin: 10px 0;
+            }
+            .likeBtn{
+                margin-top: 20px;
+                text-align: center;
+            }
+            .likeBtn button{
+                background-color: #ed74cd;
+                color: #fff;
+                border-color: #fff;
+            }
+            .likeBtn span{
+                color: #fff;
+            } --------*/
+            
+            
+/*------- footer --------*/
+
+                .footer{
+                    width: 100%;
+                    text-align: center;
+                    padding: 30px 0;
+                }
+                .footer h4{
+                    margin: top 20px;
+                    font-weight: 600;
+                    color: #ed74cd;
+                }
+                .footer p{
+                    color: #ed74cd;
+                }
+                .icons .fa{
+                    color: #ed74cd;
+                    margin: 0 13px;
+                    cursor: pointer;
+                    padding: 18px 0;
+                }
+                .fa-heart-o{
+                    color: #ed74cd;
+                }
+        </style>
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="blogposts.html">BLOG POSTS</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1 class="font-effect-fire">Blog Posts</h1>
+        </section>
+
+<!-- blog post 1 content -->
+<section class="blog1-content">
+
+    <div class="row">
+        <div class="blog1-center">
+            <img src="https://i.ibb.co/j5rgfcW/glowing-praise-girl-si.jpg" alt="glowing-praise-girl-si">
+            <h2 class="font-effect-fire">The Supernatural Naural</h2>
+            <p>Hearing from God. How does that happen? For a long time, I thought it had to happen in some magnanimous way such as hearing the audible voice of God, or through visions. While I’ve experienced God supernaturally a lot (I speak about it in this YouTube Video), I’ve realized that a lot of times God works powerfully in what seems ordinary. And to deprive ourselves from walking closely with God in the seemingly ordinary, is to miss a lot of who He is and His greatness.</p>
+            <br>
+            <p>A little over a year ago, I received an email. And the Holy Spirit whispered to me “This is a good thing, Didi. The voice is coming from you.” And what do I mean by whisper you might ask; there’s no other way I can describe it other than the voice came from my heart. It’s like I heard a voice directly from my heart. For a long time, I wondered about this. Not just about why the Holy Spirit spoke with regards to the email, but I wondered what the encounter meant. I had never really heard from the Holy Spirit so clearly this way before. I had received impressions, and I had even received thoughts that would come through my mind that I knew were from the Holy Spirit. But this time was different. I pondered on the whisper for a while; I craved for the Holy Spirit to continue to speak to me so clearly in that way. But it lasted as long as a bubble you blow. </p>
+            <br>
+            <p>However, fairly recently, I started to understand more in depth the meaning of that encounter. I believe the Holy Spirit used that moment to relay to me just how entrenched in me He is. What does it mean for the Holy Spirit to be in you? What does it mean for the Spirit that raised Jesus from the dead to be inside you? It is written in John 14:16-17: “And I will ask the Father, and he will give you another advocate to help you and be with you forever—the Spirit of truth. The world cannot accept him, because it neither sees him nor knows him. But you know him, for he lives with you and will be in you.” The word says the Holy Spirit will “be with [us] forever”; this tells us that the Holy Spirit is always with us. You can take comfort in the fact that there is no situation you are facing in life that you are ever alone in. Moreover, the word says that the Holy Spirit “lives with [us] and will be in [us].” So, this goes back to the question I posed regarding the meaning of the Holy Spirit, the Spirit of Jesus, being inside us. The best way to put it is that you are a being in water, and the Holy Spirit is the water.  He is in all that you do, and He guides you, leads you, and transforms you. </p>
+            <br>
+            <p>I want to lay this out with an example. Recently, I was praying for the healing of my grandma’s legs. She has not been able to walk well for a large number of years. During the course of the prayer, she said that things progressed from a 2/10 to a 6/10. Praise God!</p>
+            <br>
+            <p>So what am I saying exactly? This is how things started. I bent down and prayed over her legs. I then asked the Holy Spirit how I should pray, but I didn’t hear anything. And when I say I didn’t hear anything, I mean no song came to mind, no scripture came to mind, no thought came to mind, and I didn’t hear any voice. So I just felt like I should read scriptures out loud, and pray using them. How did I reach that conclusion? Because through the course of my life, I have learnt by the Holy Spirit, that the Word of God is powerful and it should always be our first resort. Remember, the Holy Spirit “will teach you all things and will remind you of everything” (John 14:26), and “He will guide you into all truth” (John 16:13). Whether it’s through sermons, your private reading of the word, gospel songs, etc. </p>
+            <br>
+            <p>So…praying for my grandma’s legs. As I prayed with the scriptures, my grandma received healing in her legs. She was feeling sensations in her legs and things moved from a 2/10 to a 4/10. I then kept on praying, and I asked the Holy Spirit again how I should pray. A song came to mind – Yah by Dunsin Oyekan. I played the song and asked her to worship with me. As we were worshipping, I strongly felt the presence of Jesus. I then paused the music and went to pray more for her, and afterwards I asked her to stand up. She could stand up on her own, she could walk a lot better, she could raise her legs, and she could run slightly. She had felt sensations and movement of bones. Things moved to a 6/10!</p>
+            <br>
+            <p>Through the prayer for the healing of my grandma’s legs, you can see how the Holy Spirit was with me like Jesus said He would  be in John 14:17. </p>
+            <br>
+            <p>Now, I want to list out some ways that the Holy Spirit speaks to us. Before you read on, ponder on John 3:8: “The wind blows wherever it pleases. You hear its sound, but you cannot tell where it comes from or where it is going. So it is with everyone born of the Spirit.”</p>
+            <br>
+            <p>Here are the ways that the Holy Spirit speaks:</p>
+            <ol>
+                <li><img src="https://i.ibb.co/YNXktmW/Cant-believe-in-AI-songs-Top-7-Rock-Songs-Written-by-AI-Bots.jpg" alt="Cant-believe-in-AI-songs-Top-7-Rock-Songs-Written-by-AI-Bots"></li>
+                <br>
+                <li><u>Through Songs</u>: One time, I was lying in my bed and I was thinking of something and I couldn’t remember a word. I then said to the Holy Spirit something like this: I can’t remember this word; If you make me remember it I won’t be able to deny your power. Instantly the word came to mind: it was microcosm. I then used that opportunity to ask something. I had been seeking healing on something so I asked about when it would happen and what I needed to do, and instantly the song came to mind: He has forgiven me all my sins and left the Holy Ghost with me; I love that man of Galilee. God was obviously telling me that I had the power within me.<br>Moreover, throughout the day, gospel songs often come to mind, and I know that they are from the Holy Spirit.  It can be tied to the moment that I’m in, amongst many other things, such as being prophetic. There was a time that I received a prophecy for a friend in the form of a song. We were talking on WhatsApp, and she was telling me that she was waiting to hear back about a job and hoping that she would get it and the wage offered would meet her expectations. The song Aka marama kan ga kuru Chineke mo Aka Marama came to mind. It means: I will put my hands together and clap For my God Put my hands together. God was obviously telling her to celebrate. And she ended up getting the job. </li>
+                <br>
+                <img src="https://i.ibb.co/P5c5X9M/10744-13757-bible-held-in-sun-proverbs-angled.jpg" alt="10744-13757-bible-held-in-sun-proverbs-angled">
+                <br>
+                <li><u>Through Bible Verses</u>: The Holy Spirit can also speak through Bible verses. In the last blog, I spoke about how I gave out lollipops with a note on a busy street in Toronto as an evangelism effort (<a href="blogpost1.html">see the last blog post here</a>). When I came back one time from one of the many trips that I had done, I was feeling worn out, and filled with thoughts of if what I was doing was meaningful and having impact. And a scripture popped in my mind: And let us not be weary in well doing: for in due season we shall reap, if we faint not (Galatians 6:9). It was from the Holy Spirit. He helped me like Jesus said he would in John 14:16.
+                <br>
+                <img src="https://i.ibb.co/pRgbjnS/Getty-Images-1448683000.jpg" alt="Getty-Images-1448683000">
+                <br>
+                <li><u>Through Thoughts That Go Through Your Mind</u>: One time I did an exercise where you’re supposed to ask someone their favourite food, have them write it down, and then ask the Holy Spirit for it and tell it to them. You’re supposed to worship before asking the Holy Spirit. I did this exercise with my brother and mum and got it right both times. Before I even worshipped, The Holy Spirit would put a thought in my mind of the name of the food.  
+                <br>
+                <img src="https://i.ibb.co/C11D5t3/why-learning-experience-design-is-valuable.jpg" alt="why-learning-experience-design-is-valuable">
+                <br>
+                <li>Through What Happens Around You: God even speaks through our experiences, circumstances, and in daily events. Pastor E.A. Adeboye (General Overseer of the Redeemed Christian Church of God) often says something like if he even hits his leg somewhere, he asks God what happened and why the angels did not keep it from happening. I started doing this too. If something happens, both positive and negative, speak to God about it. </li>
+            </ol>
+            <br>
+            <p>And that’s it! Hope you enjoyed the blog. You can view the YouTube video tied to the blog here: and listen to the podcast on Spotify here: </p>
+           <!-- <div class="likeBtn">
+                <button id="likeButton">Like</button>
+                <span id="likeCount">0</span>
+            </div> 
+        
+            <div class="comment-box">
+
+                <h3>Leave a comment</h3>
+
+                <form class="comment-form">
+                    <input type="text" placeholder="Enter Name or Anonymous">
+                    <textarea rows="5" placeholder="Your Comment"></textarea>
+                    <button type="submit" class="hero-btn pink-btn">POST COMMENT</button>
+                </form>
+            </div>--> 
+
+        </div>
+</section>
+
+
+
+<!-- Footer -->
+<section class="footer">
+    <h4>Social Media</h4>
+    <div class="icons">
+        <a href="https://instagram.com/iamdidimoffat"><i class="fa fa-instagram"></i></a>
+        <a href="https://youtube.com/@iamdidimoffat"><i class="fa fa-youtube-play"></i></a>
+        <a href="https://podcasters.spotify.com/pod/show/iamdidimoffat"><i class="fa fa-spotify"></i></i></a>
+    </div>
+    <p>Made with <i class="fa fa-heart-o"></i> by Didi Moffat</p>
+</section>
+
+
+<!--JavaScript for Toggle Menu-->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+
+/*-------   var likeButton = document.getElementById("likeButton");
+            var likeCount = document.getElementById("likeCount");
+            let count = 0;
+
+            likeButton.addEventListener("click", () => {
+                count++;
+                likeCount.innerText = count;
+            }); --------*/
+            
+        </script>
+    </body>
+</html>
