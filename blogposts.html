@@ -137,6 +137,36 @@
             .blogposts-col a{
                 text-decoration: none;
             }
+            .subscription .bk {
+	            background-color: #EEF0F7;
+	            border: 1px dashed #ed74cd;
+	            padding: 0;
+	            width: 160px;
+	            margin: 0px;}
+            .subscription .txt {
+	            font-family: Verdana, Arial, Helvetica, sans-serif;
+	            font-size: 10px;
+	            color: #ed74cd;}
+
+            .subscription .txtbox {
+	            background-color: #FFFFFF;
+	            border: 1px solid #CCCCCC;
+	            padding: 0;
+	            font-family: Verdana, Arial, Helvetica, sans-serif;
+	            font-size: 12px;}
+	
+            .subscription .button {
+	            background-color: #ed74cd;
+	            border: 1px solid #CCCCCC;
+	            padding: 0;
+	            color: #fff;
+	            font-family: Verdana, Arial, Helvetica, sans-serif;
+	            font-size: 12px;}
+	
+            .subscription fieldset { 
+	            border: 3px solid #fff; 
+	            margin: 0;
+	            padding: 13;}
 /*------- footer --------*/
 
                 .footer{
@@ -188,14 +218,23 @@
             <a href="blogpost1.html"><img src="https://i.ibb.co/289vQGS/guy-pulls-out-last-ruble-out-empty-purse-poverty-unemployment-man-with-no-money-businessman-holding.jpg" alt="guy-pulls-out-last-ruble-out-empty-purse-poverty-unemployment-man-with-no-money-businessman-holding-"></a>
             <a href="blogpost1.html"><h3 class="font-effect-fire">I Care, But My Purse Hurts</h3></a>
         </div>
-        <br>
         <div class="blogposts-col">
             <a href="blogpost2.html"><img src="https://i.ibb.co/j5rgfcW/glowing-praise-girl-si.jpg" alt="glowing-praise-girl-si"></a>
             <a href="blogpost2.html"><h3 class="font-effect-fire">The Supernatural Natural</h3></a>
         </div>
-        <br>
         <div class="blogposts-col">
         </div>
+    </div>
+    <div class="subscription">
+        <form name="form1" method="post" action="subscription.php" class="bk">
+            <fieldset>
+            <p align="center" class="txt">Stay up-to-date with blogs! Insert your email:<br>
+              <input name="email" type="text" size="12" class="txtbox">
+              <input type="submit" name="Submit" value="Go" class="button">
+              <br>
+              by <a href="http://www.sendblaster.com" title="Free mailing list manager and bulk email desktop software">SendBlaster</a></p>
+            </fieldset>
+          </form>
     </div>
 </section>
 
